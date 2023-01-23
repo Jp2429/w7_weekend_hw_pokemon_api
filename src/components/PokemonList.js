@@ -21,7 +21,7 @@ const PokemonList=({pokemons,onPokemonSelected})=>{
     return (
         <div id="list-items-and-select">
             <div id="list-div">
-                <h3>List of the First 30 Pokemon</h3>
+                <h3>List of 20 Pokemon</h3>
                 <hr></hr>
                 <ul id="list-ul">
                     {listAllPokemon}

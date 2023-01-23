@@ -38,7 +38,7 @@
 }
 #list-items-and-select{
   
-  margin-top:20px;
+  margin-top:-10px;
   margin-left:50px;
   display:grid;
   grid-template-rows: auto auto;
@@ -46,10 +46,18 @@
   grid-gap:50px;
 }
 #poke-details{
+  
   display:flexbox;
   float:right;
-  margin-top:-890px;
+  margin-top:-420px;
   margin-right:40px;
+}
+#change-page{
+  margin-left:50px;
+  display:grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 45% 45%;
+  grid-gap:50px;
 }
 #list-div{
   /* background-color: antiquewhite; */
@@ -77,7 +85,7 @@
 #pokemon-container{
   margin-top:20px;
   margin-left:50px;
-  background-color: cadetblue;
+  background-color: red;
   width:90%;
   display:flexbox;
   border:5px;
@@ -88,12 +96,12 @@
 
 #list-ul{
   display:grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 40% 40% ;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 32% 32% 32% ;
   grid-gap: 25px;
   justify-content: center;
   margin-right:20px;
-  margin-left:25px;
+  margin-left:35px;
   padding:10px;
 }
 
@@ -138,4 +146,17 @@
 }
 .p-tag{
   margin-left:10px;
+}
+h1{
+  color:white;
+}
+h3{
+  color:white;
+}
+hr{
+  background-color: black;
+  color:black;
+  border:0px;
+  border-top: 2px;
+  border-style: solid;
 }
