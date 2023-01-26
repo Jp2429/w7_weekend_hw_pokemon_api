@@ -15,8 +15,6 @@ const PokemonsContainer=()=>{
         getPokemonData()
     },[pokemonUrl,offset])
 
-    // "https://pokeapi.co/api/v2/pokemon?offset=0&limit=30"
-
     const getPokemonList=function(){
         fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`)
             .then(res => res.json())
@@ -50,7 +48,7 @@ const PokemonsContainer=()=>{
             <hr></hr>
             <PokemonUrl curOffset={offset} curLimit={limit} onPrevChange={onPrevChange} onNextChange={onNextChange}/>
             <div id="select-and-display">
-                <PokemonList pokemons={pokemonList} onPokemonSelected={onPokemonSelected}/>
+                <PokemonList pokemons={pokemonList} onPokemonSelected={onPokemonSelected} curOffset={offset}/>
                 <hr></hr>
             </div>
             <div id="poke-details">

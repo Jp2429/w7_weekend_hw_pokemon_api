@@ -1,7 +1,7 @@
 import PokemonOption from './PokemonOption'
 import ListPokemon from './ListPokemon'
 
-const PokemonList=({pokemons,onPokemonSelected})=>{
+const PokemonList=({pokemons,onPokemonSelected,curOffset})=>{
 
     const handleChange=function(event){
         const chosenPokemon=pokemons[event.target.value]
@@ -14,7 +14,8 @@ const PokemonList=({pokemons,onPokemonSelected})=>{
     })
 
     const listAllPokemon=pokemons.map((pokemon,index)=>{
-        return <ListPokemon pokemon={pokemon} key={index}/>
+        let i=index+1
+        return <ListPokemon pokemon={pokemon} key={index} id={i+curOffset}/>
     })
 
 
